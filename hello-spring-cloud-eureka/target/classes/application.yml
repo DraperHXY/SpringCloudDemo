@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: hello-spring-cloud-eureka
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false # 开启服务端模式，false
+    fetchRegistry: false # 开启服务端模式, false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
