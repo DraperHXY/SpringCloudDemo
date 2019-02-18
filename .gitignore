@@ -53,4 +53,5 @@ fabric.properties
 # Editor-based Rest Client
 .idea/httpRequests
 */target
-**/application-git.yml
+
+hello-spring-cloud-config/src/main/resources/application.yml
