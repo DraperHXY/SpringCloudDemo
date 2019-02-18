@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: hello-spring-cloud-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: ${git.uri}
+          search-paths: ${git.search-paths}
+          username: ${git.username}
+          password: ${git.password}
+  profiles:
+    include: git
+
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
