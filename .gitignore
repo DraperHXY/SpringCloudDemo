@@ -54,4 +54,4 @@ fabric.properties
 .idea/httpRequests
 */target
 
-hello-spring-cloud-config/src/main/resources/application.yml
+hello-spring-cloud-config/src/main/resources/application-git.yml
