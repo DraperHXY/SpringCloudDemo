@@ -48,12 +48,22 @@ git:
 
 
 
-### 三、配置 Docker
+### 三、配置 ZipKin
 
-配置 ZipKin 进行服务链追踪
+配置 ZipKin 进行服务链追踪，有两种方式
+
+#### 方案一 使用 Docker
 
 ```bash
 docker run -d -p 9411:9411 openzipkin/zipkin
+```
+
+#### 方案二 jar 包直接运行
+
+[zipkin.jar](zipkin.jar)
+
+```bash
+java -jar zipkin.jar
 ```
 
 
